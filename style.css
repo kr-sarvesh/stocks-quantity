@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+  background-color: #35bdd0;
+  font-family: 'Montserrat', sans-serif;
+}
+label {
+  display: block;
+  padding-bottom: 2rem;
+}
+input {
+  background-color: #51e1ed;
+}
