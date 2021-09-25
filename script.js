@@ -17,7 +17,7 @@ var submitHandler = (e) => {
   ) {
     showOutputMessage('please enter all details');
   } else if (curr < 0) {
-    showOutputMessage('Enter positive value');
+    showOutputMessage('Enter current price must be positive value');
   } else {
     calculateProfitAndLoss(ip, qty, curr);
   }
