@@ -15,9 +15,9 @@ var submitHandler = (e) => {
     (ip == null || ip == '',
     qty == null || qty == '' || curr == null || curr == '')
   ) {
-    showOutputMessage('please enter all details');
+    showOutputMessage('Please enter all details');
   } else if (curr < 0) {
-    showOutputMessage('Enter current price must be positive value');
+    showOutputMessage('Current price must be positive value');
   } else {
     calculateProfitAndLoss(ip, qty, curr);
   }
