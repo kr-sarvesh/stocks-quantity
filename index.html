@@ -11,31 +11,39 @@
   <body>
     <main>
       <h1>Mark -14 Stocks-quantity</h1>
-      <label for="initial price"
-        >Initial Price
-        <input
-          type="number"
-          id="initial-price"
-          placeholder="Enter initial price"
-        />
-      </label>
-      <label for="stocks-quantity"
-        >Quantity of stocks
-        <input
-          type="number"
-          placeholder="Enter stocks quantity"
-          id="stocks-quantity"
-        />
-      </label>
-      <label for="current-price"
-        >Current Price
-        <input
-          type="number"
-          placeholder="Enter the current price"
-          id="current-price"
-        />
-      </label>
-      <button id="submit-btn">Please submit</button>
+      <form class="form-handler">
+        <label for="initial price"
+          >Initial Price
+          <input
+            type="number"
+            id="initial-price"
+            placeholder="Enter initial price"
+            min="1"
+            required
+          />
+        </label>
+        <label for="stocks-quantity"
+          >Quantity of stocks
+          <input
+            type="number"
+            placeholder="Enter stocks quantity"
+            id="stocks-quantity"
+            min="1"
+            required
+          />
+        </label>
+        <label for="current-price"
+          >Current Price
+          <input
+            type="number"
+            placeholder="Enter the current price"
+            id="current-price"
+            min="0"
+            required
+          />
+        </label>
+        <button id="submit-btn">Please submit</button>
+      </form>
       <p id="output-box"></p>
     </main>
     <script src="script.js"></script>
