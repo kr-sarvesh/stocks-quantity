@@ -3,9 +3,6 @@ var stocksQty = document.querySelector('#stocks-quantity');
 var currentPrice = document.querySelector('#current-price');
 var outputBox = document.querySelector('#output-box');
 var submitBtn = document.querySelector('#submit-btn');
-var form = document.querySelector('.form-handler');
-
-form.addEventListener('submit', calculateProfitAndLoss);
 
 var submitHandler = (e) => {
   var ip = Number(initialPrice.value);
@@ -16,8 +13,8 @@ var submitHandler = (e) => {
     qty == null || qty == '' || curr == null || curr == '')
   ) {
     showOutputMessage('Please enter all details');
-  } else if (curr < 0) {
-    showOutputMessage('Current price must be positive value');
+  } else if (ip < 0 || qty < 0 || curr < 0) {
+    showOutputMessage('Please enter all positive values');
   } else {
     calculateProfitAndLoss(ip, qty, curr);
   }
